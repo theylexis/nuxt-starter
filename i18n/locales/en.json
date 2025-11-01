@@ -1,0 +1,6 @@
+{
+  "light": "Light",
+  "dark": "Dark",
+  "colorMode": "{mode} mode",
+  "switchToColorMode": "Switch to {mode} mode"
+}
