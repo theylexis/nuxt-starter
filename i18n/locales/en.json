@@ -1,6 +1,8 @@
 {
-  "light": "Light",
-  "dark": "Dark",
   "colorMode": "{mode} mode",
+  "dark": "Dark",
+  "home": "Home",
+  "light": "Light",
+  "logIn": "Log in",
   "switchToColorMode": "Switch to {mode} mode"
 }

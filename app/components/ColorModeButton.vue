@@ -15,7 +15,7 @@ const isDark = computed({
   <ClientOnly v-if="!colorMode?.forced">
     <Button
       :icon="isDark ? 'i-lucide-sun' : 'i-lucide-moon'"
-      mode="primary"
+      mode="secondary"
       :aria-label="$t('switchToColorMode', { mode: isDark ? $t('light') : $t('dark') })"
       @click="isDark = !isDark"
     >

@@ -1,8 +1,9 @@
 <script setup lang="ts">
+
 </script>
 
 <template>
   <Container>
-    home :)
+    <LoginForm />
   </Container>
 </template>

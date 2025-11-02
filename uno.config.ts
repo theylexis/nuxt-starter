@@ -10,29 +10,36 @@ import {
   transformerVariantGroup,
 } from 'unocss'
 
-const btn = 'px-2.5 py-1 rounded inline-flex items-center gap-2 cursor-pointer disabled:cursor-default disabled:opacity-50 hover:brightness-95 active:brightness-90'
+const btn = 'px-3 py-1.5 overflow-hidden relative rounded inline-flex items-center gap-2 cursor-pointer disabled:cursor-default disabled:opacity-50 hover:bg-opacity-90 active:bg-opacity-80'
 
 export default defineConfig({
   theme: {
     colors: {
       primary: {
-        50: '#edfffc',
-        100: '#c2fff8',
-        200: '#84fff3',
-        300: '#3fffed',
-        400: '#08f9df',
-        500: '#00dcc6',
-        600: '#00b2a4',
-        700: '#008d84',
-        800: '#006c67',
-        900: '#065b57',
-        950: '#003838',
+        DEFAULT: '#4DDCA1',
+        50: '#FFFFFF',
+        100: '#FFFFFF',
+        200: '#E2F9F0',
+        300: '#C0F3DE',
+        400: '#9EECCC',
+        500: '#7CE5BA',
+        600: '#4DDCA1',
+        700: '#28C987',
+        800: '#1F9A68',
+        900: '#156B48',
+        950: '#115438',
       },
+      canvas: 'Canvas',
     },
   },
   shortcuts: [
     ['btn', btn],
-    ['btn-primary', `${btn} bg-primary-600 text-white`],
+    ['btn-primary', `${btn} bg-primary text-dark`],
+    ['btn-secondary', `${btn} bg-gray-300 text-dark`],
+
+    ['border-muted', 'border-gray-200 dark:border-gray-700'],
+    ['ring-muted', 'ring-gray-200 dark:ring-gray-700'],
+    ['outline-muted', 'outline-gray-200 dark:outline-gray-700'],
   ],
   presets: [
     presetWind4(),
@@ -43,7 +50,7 @@ export default defineConfig({
     presetTypography(),
     presetWebFonts({
       fonts: {
-        sans: 'DM Sans',
+        sans: 'Inter',
         serif: 'DM Serif Display',
         mono: 'DM Mono',
       },

@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <Container>
-    home :)
-  </Container>
+  <main class="flex min-h-screen">
+    <slot />
+  </main>
 </template>

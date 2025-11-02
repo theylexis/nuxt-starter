@@ -7,15 +7,16 @@ const props = defineProps<Props>()
 
 const attrs = useAttrs()
 const hasClickHandler = computed(() => !!attrs.onClick)
+const isSubmitButton = computed(() => attrs.type === 'submit')
 </script>
 
 <template>
-  <Link v-if="props.to" :to="props.to">
+  <CustomLink v-if="props.to" :to="props.to">
     <slot />
-  </Link>
+  </CustomLink>
   <button
-    v-else-if="hasClickHandler"
-    type="button"
+    v-else-if="hasClickHandler || isSubmitButton"
+    v-bind="$attrs"
   >
     <slot />
   </button>
