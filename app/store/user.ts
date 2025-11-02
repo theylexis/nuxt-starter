@@ -1,4 +1,4 @@
-import type { AuthUser } from '~~/lib/client'
+import type { AuthUser } from '~~/auth/client'
 
 import { defineStore } from 'pinia'
 
